@@ -1,5 +1,5 @@
 - name: Get version information from Cisco switch
-  hosts: ASR_9200
+  hosts: ASR_920
   gather_facts: 'no'
   connection: network_cli
 
