@@ -1,0 +1,14 @@
+- name: Get version information from Cisco switch
+  hosts: ASR_9200
+  gather_facts: 'no'
+  connection: network_cli
+
+  vars:
+    ansible_network_os: cisco.ios.ios
+
+  tasks:
+    - name: Gather IOS facts from Cisco switch
+      cisco.ios.ios_facts: null
+    - name: Display version information
+      debug:
+        msg: 'Cisco Switch Version: {{ ansible_net_version }}'
