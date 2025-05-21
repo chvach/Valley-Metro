@@ -1,0 +1,47 @@
+[ASR_920]
+#ASR_920_WAN_P1
+101-wan-p1 ansible_host=10.1.0.201 ansible_network_os=cisco.ios.ios
+#evbm-wan-p1 ansible_host=10.1.0.207 ansible_network_os=cisco.ios.ios
+#mob-wan-p1 ansible_host=10.1.0.204 ansible_network_os=cisco.ios.ios
+#mtf-wan-p1 ansible_host=10.1.0.210 ansible_network_os=cisco.ios.ios
+#dtphx-wan-p1 ansible_host=10.1.0.213 ansible_network_os=cisco.ios.ios
+#sce-wan-p1 ansible_host=10.1.0.216 ansible_network_os=cisco.ios.ios
+
+#ASR_920_WAN_P2
+#101-wan-p2 ansible_host=10.1.0.202 ansible_network_os=cisco.ios.ios
+#evbo-wan-p2 ansible_host=10.1.0.208 ansible_network_os=cisco.ios.ios
+#mtf-wan-p2 ansible_host=10.1.0.211 ansible_network_os=cisco.ios.ios
+#sce-wan-p2 ansible_host=10.1.0.217 ansible_network_os=cisco.ios.ios
+
+#ASR_920_BRDR_1
+ae-border-rtr1 ansible_host=10.8.0.18 ansible_network_os=cisco.ios.ios
+
+#ASR_920_BRDR_2
+ae-border-rtr2 ansible_host=10.8.0.19 ansible_network_os=cisco.ios.ios
+
+[ASR_1001]
+ae-route-reflector ansible_host=10.8.0.11 ansible_network_os=cisco.ios.ios
+omc-route-reflector ansible_host=10.8.2.11 ansible_network_os=cisco.ios.ios
+
+[CAT_9300]
+Floor9 ansible_host=172.19.9.4 ansible_network_os=cisco.ios.ios
+Floor14 ansible_host=172.19.14.4 ansible_network_os=cisco.ios.ios
+Floor10 ansible_host=172.19.10.4 ansible_network_os=cisco.ios.ios
+Floor11 ansible_host=172.19.11.4 ansible_network_os=cisco.ios.ios
+Floor12 ansible_host=172.19.12.4 ansible_network_os=cisco.ios.ios
+Floor13 ansible_host=172.19.13.4 ansible_network_os=cisco.ios.ios
+101-pe ansible_host=10.1.0.200 ansible_network_os=cisco.ios.ios
+sce-pe ansible_host=10.1.0.215 ansible_network_os=cisco.ios.ios
+#dtphx-pe ansible_host=10.1.0.212 ansible_network_os=cisco.ios.ios device not in LM inventory
+
+[CAT_9200]
+101_CCTV ansible_host=172.20.240.4 ansible_network_os=cisco.ios.ios
+Room_10A_Switch ansible_host=172.19.10.5 ansible_network_os=cisco.ios.ios
+evbom-idf-2 ansible_host=192.168.11.12 ansible_network_os=cisco.ios.ios
+evbom-idf-3 ansible_host=192.168.11.13 ansible_network_os=cisco.ios.ios
+
+
+
+[Cisco_2921]
+greenfield-vg01 ansible_host=10.0.210.254 ansible_network_os=cisco.ios.ios
+omc-cube-vg01 ansible_host=10.0.255.11 ansible_network_os=cisco.ios.ios
