@@ -15,7 +15,7 @@
     - name: Run show interface status
       cisco.ios.ios_command:
         commands:
-          - show ip interface brief
+          - "show ip interface brief"
       register: interface_output
 
     - name: Display the output
