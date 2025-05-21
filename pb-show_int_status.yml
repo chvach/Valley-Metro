@@ -13,7 +13,7 @@
 
   tasks:
     - name: Run show interface status
-      ios_command:
+      cisco.ios.ios_command:
         commands:
           - show ip interface brief
       register: interface_output
