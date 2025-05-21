@@ -1,5 +1,3 @@
-(vm-ansibleenv) [vm-ansible@l-opsutil vm_ansiblenv]$ cat inv_upgradeafter7.yml
-#Inventory for upgrade any night after 7pm
 
 [ASR_920]
 #ASR_920_WAN_P1
