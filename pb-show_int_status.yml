@@ -1,0 +1,24 @@
+---
+- name: Run show interface status on Cisco device
+  hosts: ASR_920
+  gather_facts: no
+  vars_files:
+   - group_vars/vault.yml
+  vars:
+    ansible_user: "{{ username }}"
+    ansible_password: "{{ password }}"
+    ansible_network_os: ios
+    ansible_connection: network_cli
+    ansible_command_timeout: 300
+
+  tasks:
+    - name: Run show interface status
+      ios_command:
+        commands:
+          - show ip interface brief
+      register: interface_output
+
+    - name: Display the output
+      debug:
+        var: interface_output.stdout_lines
+~                                                       
