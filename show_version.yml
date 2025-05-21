@@ -16,12 +16,8 @@
 
 
   tasks:
-    - name: Run show version
-      cisco.ios.ios_command:
-        commands:
-          - show version
-      register: version_output
-
-    - name: Display the output
+    - name: Gather IOS facts from Cisco switch
+      cisco.ios.ios_facts: null
+    - name: Display version information
       debug:
-        var: version_output.stdout_lines
+        msg: 'Cisco Switch Version: {{ ansible_net_version }}'
