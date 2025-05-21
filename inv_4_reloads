@@ -1,23 +1,7 @@
 [ASR_920]
 #ASR_920_WAN_P1
-101-wan-p1 ansible_host=10.1.0.201 ansible_network_os=cisco.ios.ios
-#evbm-wan-p1 ansible_host=10.1.0.207 ansible_network_os=cisco.ios.ios
-#mob-wan-p1 ansible_host=10.1.0.204 ansible_network_os=cisco.ios.ios
-#mtf-wan-p1 ansible_host=10.1.0.210 ansible_network_os=cisco.ios.ios
-#dtphx-wan-p1 ansible_host=10.1.0.213 ansible_network_os=cisco.ios.ios
-#sce-wan-p1 ansible_host=10.1.0.216 ansible_network_os=cisco.ios.ios
-
-#ASR_920_WAN_P2
-#101-wan-p2 ansible_host=10.1.0.202 ansible_network_os=cisco.ios.ios
-#evbo-wan-p2 ansible_host=10.1.0.208 ansible_network_os=cisco.ios.ios
-#mtf-wan-p2 ansible_host=10.1.0.211 ansible_network_os=cisco.ios.ios
-#sce-wan-p2 ansible_host=10.1.0.217 ansible_network_os=cisco.ios.ios
-
-#ASR_920_BRDR_1
-ae-border-rtr1 ansible_host=10.8.0.18 ansible_network_os=cisco.ios.ios
-
-#ASR_920_BRDR_2
-ae-border-rtr2 ansible_host=10.8.0.19 ansible_network_os=cisco.ios.ios
+10.1.0.201
+10.1.0.213
 
 [ASR_1001]
 ae-route-reflector ansible_host=10.8.0.11 ansible_network_os=cisco.ios.ios
