@@ -12,7 +12,7 @@
     ansible_command_timeout: 300
 
   tasks:
-    - name: Run show interface status
+    - name: "show interface status"
       cisco.ios.ios_command:
         commands:
           - "show ip interface brief"
