@@ -21,4 +21,4 @@
     - name: Display the output
       debug:
         var: interface_output.stdout_lines
-~                                                       
+                                                    
